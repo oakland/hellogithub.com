@@ -111,6 +111,10 @@ h3.color-blue .favourite {
 	background-color: #eee;
 }
 
+.addFolder {
+	display: none;
+}
+
 .pure-form-aligned .pure-control-group label {
 	width: 3em;
 }
@@ -119,3 +123,45 @@ h3.color-blue .favourite {
     margin: 1.5em 0 0 4em;
 }
 /* favourite end */
+
+/*login box start*/
+.modal {
+	display: none;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+
+	color: #555;
+}
+
+.modal-content {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 250px;
+	height: 250px;
+
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 25px;
+	border-radius: 5px;
+}
+
+.modal-header span {
+	font-size: 50px;
+	padding: 10px;
+	cursor: default;
+}
+
+.center {
+	text-align: center;
+}
+
+/*login box end*/

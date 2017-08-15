@@ -46,7 +46,7 @@
                     <div class="margin-bottom-20">
                         <h3 class="color-blue"> 
                             <a href="https://github.com/EZLippi/Tinyhttpd" class="color-blue">1. TinyHttpd</a>
-                            <span class="icon-star-empty color-blue"></span>
+                            <span title="收藏" class="icon-star-empty color-blue"></span>
                         </h3>
                         <p>一个不到 500 行的超轻量型 HTTP Server，可以用来理解服务器程序的原理和本质。快看 C语言 的入门级项目！</p>
                     </div>
@@ -154,6 +154,11 @@
                     </div>
                 </div>
 
+                <div class="margin-bottom-40">
+                    <h2 class="bg-primary"><span></span> Test Block</h2>
+                    <p><button id="toggleModal" class="pure-button">Click me</button></p>
+                </div>
+
             </div> <!-- content end -->
         </div> <!-- main end -->
 
@@ -174,7 +179,13 @@
                                 <option>我的收藏夹1</option>
                                 <option>我的收藏夹2</option>
                                 <option>我的收藏夹3</option>
+                                <option class="color-blue">添加收藏夹</option>
                             </select>
+                        </div>
+
+                        <div class="pure-control-group addFolder">
+                            <button type="submit" class="button-success pure-button">添加</button>
+                            <input type="text" placeholder="">
                         </div>
 
                         <div class="pure-controls">
@@ -186,6 +197,22 @@
             </div>
         </div>
         <!-- favourite box end -->
+
+        <!-- login box start -->
+        <div class="modal">
+            <div action="" class="modal-content">
+                <div class="center modal-header margin-bottom-40">
+                    <span class="icon-user"></span>
+                    <span class="icon-github"></span>
+                </div>
+                <p class="center modal-body margin-bottom-40">授权登陆 HelloGithub</p>
+                <div class="center modal-footer">
+                    <a class="pure-button">取消</a>
+                    <a href="/sign/in/" class="pure-button pure-button-primary">授权</a>
+                </div>
+            </div>
+        </div>
+        <!-- login box end -->
 
     </div> <!-- layout end -->
 {% endblock %}
